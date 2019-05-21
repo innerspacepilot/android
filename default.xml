@@ -18,6 +18,20 @@
            sync-c="true"
            sync-j="4" />
 
+<!-- HONAMI -->
+<project name="115ek/device_sony_amami"         path="device/sony/amami"        />
+<project name="innerspacepilot/android_device_sony_honami"         path="device/sony/honami"         />
+<project name="innerspacepilot/android_device_sony_rhine-common"   path="device/sony/rhine-common"   />
+<project name="innerspacepilot/android_device_sony_msm8974-common" path="device/sony/msm8974-common" />
+<project name="innerspacepilot/android_kernel_sony_msm8974"        path="kernel/sony/msm8974"        />
+<project name="AICP/proprietary_vendor_sony"                       path="vendor/sony" revision="p9.0"/>
+<project name="sonyxperiadev/thermanager"                      path="hardware/sony/thermanager"  revision="master" />
+<project name="sonyxperiadev/timekeep"                         path="hardware/sony/timekeep"     revision="master" />
+<project name="LineageOS/android_device_sony_common" path="device/sony/common-caf" />
+<project name="sonyxperiadev/boringssl-compat" path="external/sony/boringssl-compat" revision="master" />
+
+
+
   <!-- AOSP Projects -->
 
   <project path="build/make" name="LineageOS/android_build" groups="pdk" >
@@ -36,7 +50,7 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="art" name="LineageOS/android_art" groups="pdk" />
-  <project path="bionic" name="LineageOS/android_bionic" groups="pdk" />
+  <project path="bionic" name="innerspacepilot/android_bionic" groups="pdk" branch="16.0-fixes" />
   <project path="bootable/recovery" name="LineageOS/android_bootable_recovery" groups="pdk" />
   <project path="compatibility/cdd" name="platform/compatibility/cdd" groups="pdk" remote="aosp" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" remote="aosp" />
@@ -272,7 +286,7 @@
   <project path="external/pcre" name="platform/external/pcre" groups="pdk" remote="aosp" />
   <project path="external/pdfium" name="platform/external/pdfium" groups="pdk" remote="aosp" />
   <project path="external/perf_data_converter" name="platform/external/perf_data_converter" groups="pdk" remote="aosp" />
-  <project path="external/perfetto" name="LineageOS/android_external_perfetto" groups="pdk" />
+  <project path="external/perfetto" name="innerspacepilot/android_external_perfetto" groups="pdk" branch="16.0-fixes"/>
   <project path="external/piex" name="platform/external/piex" groups="pdk" remote="aosp" />
   <project path="external/ply" name="platform/external/ply" groups="pdk" remote="aosp" />
   <project path="external/ppp" name="LineageOS/android_external_ppp" groups="pdk" />
@@ -575,7 +589,7 @@
   <project path="system/chre" name="platform/system/chre" groups="pdk" remote="aosp" />
   <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk" remote="aosp" />
   <project path="system/connectivity/wifilogd" name="platform/system/connectivity/wifilogd" groups="pdk" remote="aosp" />
-  <project path="system/core" name="LineageOS/android_system_core" groups="pdk" />
+  <project path="system/core" name="innerspacepilot/android_system_core" groups="pdk" branch="16.0-fixes" />
   <project path="system/extras" name="LineageOS/android_system_extras" groups="pdk" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
   <project path="system/hardware/interfaces" name="platform/system/hardware/interfaces" groups="pdk" remote="aosp" />
@@ -595,7 +609,7 @@
   <project path="system/sepolicy" name="LineageOS/android_system_sepolicy" groups="pdk" />
   <project path="system/timezone" name="LineageOS/android_system_timezone" groups="pdk" />
   <project path="system/tools/aidl" name="LineageOS/android_system_tools_aidl" groups="pdk" />
-  <project path="system/tools/hidl" name="LineageOS/android_system_tools_hidl" groups="pdk" />
+  <project path="system/tools/hidl" name="innerspacepilot/android_system_tools_hidl" groups="pdk" branch="16.0-fixes" />
   <project path="system/tpm" name="platform/system/tpm" remote="aosp" />
   <project path="system/update_engine" name="LineageOS/android_system_update_engine" groups="pdk" />
   <project path="system/vold" name="LineageOS/android_system_vold" groups="pdk" />
