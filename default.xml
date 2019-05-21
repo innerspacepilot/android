@@ -28,7 +28,7 @@
 <project name="sonyxperiadev/timekeep"                         path="hardware/sony/timekeep"     revision="master" />
 <project name="LineageOS/android_hardware_sony_macaddrsetup"   path="hardware/sony/macaddrsetup" />
 <project name="LineageOS/android_device_sony_common" path="device/sony/common-caf" />
-<project name="sonyxperiadev/boringssl-compat" path="external/sony/boringssl-compat" revision="master" />
+<project name="innerspacepilot/boringssl-compat" path="external/sony/boringssl-compat" revision="16.0-fixes" />
 
 
 
