@@ -19,7 +19,6 @@
            sync-j="4" />
 
 <!-- HONAMI -->
-<project name="115ek/device_sony_amami"         path="device/sony/amami"        />
 <project name="innerspacepilot/android_device_sony_honami"         path="device/sony/honami"         />
 <project name="innerspacepilot/android_device_sony_rhine-common"   path="device/sony/rhine-common"   />
 <project name="innerspacepilot/android_device_sony_msm8974-common" path="device/sony/msm8974-common" />
@@ -27,6 +26,7 @@
 <project name="AICP/proprietary_vendor_sony"                       path="vendor/sony" revision="p9.0"/>
 <project name="sonyxperiadev/thermanager"                      path="hardware/sony/thermanager"  revision="master" />
 <project name="sonyxperiadev/timekeep"                         path="hardware/sony/timekeep"     revision="master" />
+<project name="LineageOS/android_hardware_sony_macaddrsetup"   path="hardware/sony/macaddrsetup" />
 <project name="LineageOS/android_device_sony_common" path="device/sony/common-caf" />
 <project name="sonyxperiadev/boringssl-compat" path="external/sony/boringssl-compat" revision="master" />
 
