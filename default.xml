@@ -50,7 +50,7 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="art" name="LineageOS/android_art" groups="pdk" />
-  <project path="bionic" name="innerspacepilot/android_bionic" groups="pdk" branch="16.0-fixes" />
+  <project path="bionic" name="innerspacepilot/android_bionic" groups="pdk" revision="16.0-fixes" />
   <project path="bootable/recovery" name="LineageOS/android_bootable_recovery" groups="pdk" />
   <project path="compatibility/cdd" name="platform/compatibility/cdd" groups="pdk" remote="aosp" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" remote="aosp" />
@@ -286,7 +286,7 @@
   <project path="external/pcre" name="platform/external/pcre" groups="pdk" remote="aosp" />
   <project path="external/pdfium" name="platform/external/pdfium" groups="pdk" remote="aosp" />
   <project path="external/perf_data_converter" name="platform/external/perf_data_converter" groups="pdk" remote="aosp" />
-  <project path="external/perfetto" name="innerspacepilot/android_external_perfetto" groups="pdk" branch="16.0-fixes"/>
+  <project path="external/perfetto" name="innerspacepilot/android_external_perfetto" groups="pdk" revision="16.0-fixes"/>
   <project path="external/piex" name="platform/external/piex" groups="pdk" remote="aosp" />
   <project path="external/ply" name="platform/external/ply" groups="pdk" remote="aosp" />
   <project path="external/ppp" name="LineageOS/android_external_ppp" groups="pdk" />
@@ -589,7 +589,7 @@
   <project path="system/chre" name="platform/system/chre" groups="pdk" remote="aosp" />
   <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk" remote="aosp" />
   <project path="system/connectivity/wifilogd" name="platform/system/connectivity/wifilogd" groups="pdk" remote="aosp" />
-  <project path="system/core" name="innerspacepilot/android_system_core" groups="pdk" branch="16.0-fixes" />
+  <project path="system/core" name="innerspacepilot/android_system_core" groups="pdk" revision="16.0-fixes" />
   <project path="system/extras" name="LineageOS/android_system_extras" groups="pdk" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
   <project path="system/hardware/interfaces" name="platform/system/hardware/interfaces" groups="pdk" remote="aosp" />
@@ -609,7 +609,7 @@
   <project path="system/sepolicy" name="LineageOS/android_system_sepolicy" groups="pdk" />
   <project path="system/timezone" name="LineageOS/android_system_timezone" groups="pdk" />
   <project path="system/tools/aidl" name="LineageOS/android_system_tools_aidl" groups="pdk" />
-  <project path="system/tools/hidl" name="innerspacepilot/android_system_tools_hidl" groups="pdk" branch="16.0-fixes" />
+  <project path="system/tools/hidl" name="innerspacepilot/android_system_tools_hidl" groups="pdk" revision="16.0-fixes" />
   <project path="system/tpm" name="platform/system/tpm" remote="aosp" />
   <project path="system/update_engine" name="LineageOS/android_system_update_engine" groups="pdk" />
   <project path="system/vold" name="LineageOS/android_system_vold" groups="pdk" />
