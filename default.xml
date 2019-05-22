@@ -27,7 +27,7 @@
 <project name="sonyxperiadev/thermanager"                      path="hardware/sony/thermanager"  revision="master" />
 <project name="sonyxperiadev/timekeep"                         path="hardware/sony/timekeep"     revision="master" />
 <project name="LineageOS/android_hardware_sony_macaddrsetup"   path="hardware/sony/macaddrsetup" />
-<project name="LineageOS/android_device_sony_common" path="device/sony/common-caf" />
+<project name="innerspacepilot/android_device_sony_common" path="device/sony/common-caf" revision="16.0-fixes" />
 <project name="innerspacepilot/boringssl-compat" path="external/sony/boringssl-compat" revision="16.0-fixes" />
 
 
