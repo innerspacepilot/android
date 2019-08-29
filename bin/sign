@@ -1,0 +1,20 @@
+#!/bin/bash
+
+. build/envsetup.sh
+
+OUTPUT=/home/$USER/firmware
+LINEAGE_VERSION=`get_build_var LINEAGE_VERSION`
+
+if [ -z "$LINEAGE_VERSION" ];
+then
+  echo LINEAGE_VERSION is empty
+  exit 1
+fi
+
+if [ ! -d "$OUTPUT" ];
+then
+  mkdir "$OUTPUT"
+fi
+
+./build/tools/releasetools/sign_target_files_apks -o -d ~/.android-certs $OUT/obj/PACKAGING/target_files_intermediates/*-target_files-*.zip $OUTPUT/signed-target-files-$LINEAGE_VERSION.zip
+

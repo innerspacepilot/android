@@ -1,0 +1,16 @@
+#!/bin/bash
+
+. build/envsetup.sh
+
+LINEAGE_VERSION=`get_build_var LINEAGE_VERSION`
+
+if [ -z "$LINEAGE_VERSION" ];
+then
+  echo "Run \"breakfast honami\" first"
+  exit 1
+fi
+
+sed -ibak "s/^ro\.lineage\.updater\.uri=.*$/ro.lineage.updater.uri=https:\/\/shanti:1280\/android\/ota-$LINEAGE_VERSION.json/" device/sony/honami/system.prop
+
+mka target-files-package otatools
+
