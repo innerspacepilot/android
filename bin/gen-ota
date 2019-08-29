@@ -1,0 +1,48 @@
+#!/bin/bash
+
+. build/envsetup.sh
+
+OUTPUT="/home/$USER/firmware"
+
+BUILD_ID=`get_build_var BUILD_ID`
+LINEAGE_VERSION=`get_build_var LINEAGE_VERSION`
+
+if [ -z "$LINEAGE_VERSION" ];
+then
+  echo "LINEAGE_VERSION is unset"
+  exit 1
+fi
+
+if [ ! -f "$OUTPUT/LineageOS-$LINEAGE_VERSION.zip" ];
+then
+  echo "$OUTPUT/LineageOS-$LINEAGE_VERSION.zip is missing"
+  #exit 1
+fi
+
+if [ ! -L "$OUTPUT/previous" ];
+then
+  echo "$OUTPUT/previous is missing"
+  exit 1
+fi
+
+PREVIOUS_VERSION=`readlink ~/honami/previous | sed 's/^signed-target-files-\(.*\).zip$/\1/'`
+
+./build/tools/releasetools/ota_from_target_files --full_bootloader --block -v -i $OUTPUT/previous $OUTPUT/signed-target-files-$LINEAGE_VERSION.zip $OUTPUT/ota-$LINEAGE_VERSION.zip
+
+
+cat > $OUTPUT/ota-$PREVIOUS_VERSION.json <<EOF
+{
+  "response": [
+    {
+      "datetime": `date +%s`,
+      "filename": "ota-$LINEAGE_VERSION.zip",
+      "id": $RANDOM,
+      "romtype": "UNOFFICIAL",
+      "size": `wc -c < $OUTPUT/ota-$LINEAGE_VERSION.zip`,
+      "url": "https://shanti:1280/android/ota-$LINEAGE_VERSION.zip",
+      "version": "16.0"
+    }
+  ]
+}
+EOF
+
