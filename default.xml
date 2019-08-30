@@ -31,6 +31,13 @@
 <project name="innerspacepilot/boringssl-compat" path="external/sony/boringssl-compat" revision="16.0-fixes" />
 
 
+<!-- FALCON -->
+<project name="innerspacepilot/android_device_motorola_falcon"         path="device/motorola/falcon"         />
+<project name="innerspacepilot/device_motorola_msm8226-common"         path="device/motorola/msm8226-common" />
+<project name="dotOS-Devices/kernel_motorola_msm8226"                  path="kernel/motorola/msm8226"        revision="dot-p" />
+<project name="dotOS-Devices/proprietary_vendor_motorola_falcon_titan" path="vendor/motorola"                revision="dot-p" />
+<project name="LineageOS/android_system_qcom"   		       path="system/qcom" />
+<project name="LineageOS/android_packages_resources_devicesettings"    path="packages/resources/devicesettings" />
 
   <!-- AOSP Projects -->
 
