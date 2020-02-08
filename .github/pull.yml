@@ -1,0 +1,5 @@
+version: "1"
+rules:
+  - base: lineage-16.0
+    upstream: LineageOS:lineage-16.0
+    mergeMethod: hardreset
