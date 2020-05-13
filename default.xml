@@ -18,6 +18,20 @@
            sync-c="true"
            sync-j="4" />
 
+  <project path="frameworks/base" name="innerspacepilot/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="my17.1"/>
+  <project name="innerspacepilot/android_device_sony_honami" path="device/sony/honami" />
+  <project name="innerspacepilot/android_kernel_sony_msm8974" path="kernel/sony/msm8974" />
+  <project name="AICP/device_sony_rhine-common" path="device/sony/rhine-common" revision="q10.0" />
+  <project name="AICP/device_sony_msm8974-common" path="device/sony/msm8974-common" revision="q10.0" />
+  <project name="innerspacepilot/android_kernel_sony_msm8974" path="kernel/sony/msm8974" revision="lineage-17.0" />
+  <project name="AICP/proprietary_vendor_sony" path="vendor/sony" revision="q10.0" />
+  <project name="AICP/device_sony_common" path="device/sony/common-caf" revision="q10.0-caf" />
+  <project name="AICP/hardware_sony_macaddrsetup" path="hardware/sony/macaddrsetup" revision="q10.0" />
+  <project name="AICP/hardware_sony_thermanager" path="hardware/sony/thermanager" revision="q10.0" />
+  <project name="AICP/hardware_sony_timekeep" path="hardware/sony/timekeep" revision="q10.0" />
+  <project name="AICP/external_sony_boringssl-compat" path="external/sony/boringssl-compat" revision="q10.0" />
+
+
   <!-- AOSP Projects -->
 
   <project path="build/make" name="LineageOS/android_build" groups="pdk" >
@@ -387,7 +401,6 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk" remote="aosp" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk" remote="aosp" />
   <project path="frameworks/av" name="LineageOS/android_frameworks_av" groups="pdk" />
-  <project path="frameworks/base" name="LineageOS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="aosp" />
