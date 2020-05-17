@@ -6,3 +6,6 @@ rules:
   - base: lineage-17.0
     upstream: LineageOS:lineage-17.0
     mergeMethod: hardreset
+  - base: lineage-17.1
+    upstream: LineageOS:lineage-17.1
+    mergeMethod: hardreset
