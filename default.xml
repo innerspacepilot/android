@@ -29,6 +29,8 @@
   <project name="AICP/hardware_sony_thermanager" path="hardware/sony/thermanager" revision="q10.0" />
   <project name="AICP/hardware_sony_timekeep" path="hardware/sony/timekeep" revision="q10.0" />
   <project name="AICP/external_sony_boringssl-compat" path="external/sony/boringssl-compat" revision="q10.0" />
+  <project path="frameworks/opt/jamesdsp" name="AICP/frameworks_opt_jamesdsp" remote="aicp" />
+  <project path="packages/apps/JamesDSPManager" name="AICP/packages_apps_JamesDSPManager" remote="aicp" />
 
 
   <!-- AOSP Projects -->
