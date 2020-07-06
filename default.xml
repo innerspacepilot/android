@@ -21,7 +21,7 @@
    <!-- falcon -->
    <!-- https://github.com/TheXPerienceProject/android_kernel_motorola_msm8226 -->
    <project name="innerspacepilot/android_device_motorola_falcon"         path="device/motorola/falcon" />
-   <project name="dotOS-Devices/device_motorola_msm8226-common"           path="device/motorola/msm8226-common" revision="dot-o" />
+   <project name="innerspacepilot/device_motorola_msm8226-common"           path="device/motorola/msm8226-common" revision="my15.1" />
    <project name="dotOS-Devices/kernel_motorola_msm8226"                  path="kernel/motorola/msm8226"        revision="dot-o" />
    <project name="dotOS-Devices/proprietary_vendor_motorola_falcon_titan" path="vendor/motorola"                revision="dot-o" />
    <project name="LineageOS/android_packages_resources_devicesettings"    path="packages/resources/devicesettings" />
