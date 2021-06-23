@@ -17,9 +17,9 @@
            remote="github"
            sync-c="true"
            sync-j="4" />
-           
-	<project name="innerspacepilot/device_xiaomi_juice" path="device/xiaomi/juice" />
-	<project name="dotOS-Devices/vendor_xiaomi_juice" path="vendor/xiaomi/juice" />
+
+	<project name="innerspacepilot/device_xiaomi_juice" path="device/xiaomi/juice" revision="my18.1" />
+	<project name="dotOS-Devices/vendor_xiaomi_juice" path="vendor/xiaomi/juice" revision="dot11" />
 
 
 
