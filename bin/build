@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx8192m"
+
+build-main && \
+sign && \
+gen-full-ota
+
