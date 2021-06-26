@@ -1,0 +1,25 @@
+#!/bin/bash
+
+. build/envsetup.sh
+
+OUTPUT="/home/$USER/firmware"
+
+BUILD_ID=`get_build_var BUILD_ID`
+LINEAGE_VERSION=`get_build_var LINEAGE_VERSION`
+
+if [ -z "$LINEAGE_VERSION" ];
+then
+  echo "LINEAGE_VERSION is unset"
+  exit 1
+fi
+
+if [ ! -f "$OUTPUT/signed-target-files-$LINEAGE_VERSION.zip" ];
+then
+  echo "$OUTPUT/signed-target-files-$LINEAGE_VERSION.zip is missing"
+  exit 1
+fi
+
+./build/tools/releasetools/ota_from_target_files -k ~/.android-certs/releasekey --block $OUTPUT/signed-target-files-$LINEAGE_VERSION.zip $OUTPUT/LineageOS-$LINEAGE_VERSION.zip
+
+echo -e "Package Complete: \e[32m$OUTPUT/LineageOS-$LINEAGE_VERSION.zip\e[0m"
+
