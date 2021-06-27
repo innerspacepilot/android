@@ -19,7 +19,7 @@ then
   exit 1
 fi
 
-./build/tools/releasetools/ota_from_target_files -k ~/.android-certs/releasekey --block $OUTPUT/signed-target-files-$LINEAGE_VERSION.zip $OUTPUT/LineageOS-$LINEAGE_VERSION.zip
+ota_from_target_files -k ~/.ssh/android-keys/releasekey --block $OUTPUT/signed-target-files-$LINEAGE_VERSION.zip $OUTPUT/LineageOS-$LINEAGE_VERSION.zip
 
 echo -e "Package Complete: \e[32m$OUTPUT/LineageOS-$LINEAGE_VERSION.zip\e[0m"
 
