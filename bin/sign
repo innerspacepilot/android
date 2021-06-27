@@ -16,5 +16,5 @@ then
   mkdir "$OUTPUT"
 fi
 
-./build/tools/releasetools/sign_target_files_apks -d ~/.android-certs -o $OUT/obj/PACKAGING/target_files_intermediates/${TARGET_PRODUCT}-target_files-*.zip $OUTPUT/signed-target-files-$LINEAGE_VERSION.zip
+sign_target_files_apks -d ~/.ssh/android-keys -o $OUT/obj/PACKAGING/target_files_intermediates/${TARGET_PRODUCT}-target_files-*.zip $OUTPUT/signed-target-files-$LINEAGE_VERSION.zip
 
