@@ -20,7 +20,7 @@
 
 <project name="innerspacepilot/device_xiaomi_juice" path="device/xiaomi/juice" revision="my18.1" />
 <project name="dotOS-Devices/vendor_xiaomi_juice"   path="vendor/xiaomi/juice" revision="dot11" />
-<project name="aseelps/android_kernel_xiaomi_juice" path="kernel/xiaomi/juice" revision="11.0" />
+<project name="GZR-Kernels/Optimus_Drunk_Citrus" path="kernel/xiaomi/juice" revision="11.0" />
 <project name="AICP/prebuilts_clang_host_linux-x86_proton" path="prebuilts/clang/host/linux-x86/clang-proton" revision="master" />
 
   <!-- AOSP Projects -->
