@@ -1,0 +1,4 @@
+#!/bin/sh
+
+repo status | grep ^project | awk '{print $2}' | xargs -I{} echo "cd {}; git reset --hard; git ls-files --other | xargs rm -f" | xargs -I{} bash -c "{}"
+repo status

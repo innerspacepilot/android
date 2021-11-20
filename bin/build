@@ -4,5 +4,6 @@
 
 build-main && \
 sign && \
-gen-full-ota
+gen-full-ota && \
+copy-to-mee
 

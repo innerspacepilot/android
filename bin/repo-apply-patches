@@ -1,0 +1,6 @@
+#!/bin/sh
+
+for i in .repo/manifests/patches/*.patch; do repo-patch "$i"; done
+
+repo status
+
