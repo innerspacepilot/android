@@ -1,0 +1,51 @@
+
+project frameworks/base/
+diff --git a/packages/SystemUI/res/layout/status_bar.xml b/packages/SystemUI/res/layout/status_bar.xml
+index 6c6fd90f..1931c9f1 100644
+--- a/packages/SystemUI/res/layout/status_bar.xml
++++ b/packages/SystemUI/res/layout/status_bar.xml
+@@ -123,9 +123,9 @@
+ 
+     <com.android.keyguard.AlphaOptimizedLinearLayout
+         android:id="@+id/centered_area"
+-        android:gravity="center"
++        android:gravity="right"
+         android:orientation="horizontal"
+-        android:layout_width="match_parent"
++        android:layout_width="280dp"
+         android:layout_height="match_parent"
+         >
+         <com.android.systemui.statusbar.policy.Clock
+@@ -143,7 +143,7 @@
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layoutDirection="ltr"
+-            android:gravity="center"
++            android:gravity="right"
+             >
+ 
+             <org.lineageos.internal.statusbar.NetworkTraffic
+@@ -151,7 +151,7 @@
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:maxLines="2"
+-                android:gravity="center" />
++                android:gravity="right" />
+ 
+         </com.android.systemui.statusbar.LineageStatusBarItemHolder>
+     </com.android.keyguard.AlphaOptimizedLinearLayout>
+
+project packages/apps/LineageParts/
+diff --git a/src/org/lineageos/lineageparts/statusbar/StatusBarSettings.java b/src/org/lineageos/lineageparts/statusbar/StatusBarSettings.java
+index 2708618..f58cfc0 100644
+--- a/src/org/lineageos/lineageparts/statusbar/StatusBarSettings.java
++++ b/src/org/lineageos/lineageparts/statusbar/StatusBarSettings.java
+@@ -80,7 +80,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
+ 
+         mNetworkTrafficPref = findPreference(NETWORK_TRAFFIC_SETTINGS);
+ 
+-        mHasNotch = DeviceUtils.hasNotch(getActivity());
++        mHasNotch = false;
+         if (mHasNotch) {
+             getPreferenceScreen().removePreference(mNetworkTrafficPref);
+         }
