@@ -14,7 +14,7 @@
            revision="refs/tags/android-10.0.0_r41" />
 
   <remote  name="aicp"
-           fetch="git://github.com/"
+           fetch="https://github.com/"
            review="gerrit.aicp-rom.com"
            revision="refs/heads/q10.0"
            sync-j="8" />
@@ -25,7 +25,6 @@
            sync-c="true"
            sync-j="4" />
 
-  <project name="innerspacepilot/android_frameworks_base" path="frameworks/base" groups="pdk-cw-fs,pdk-fs" revision="my17.1" />
   <project name="innerspacepilot/android_external_toybox" path="external/toybox" groups="pdk" revision="my17.1" />
   <project name="innerspacepilot/android_device_sony_honami" path="device/sony/honami" />
   <project name="innerspacepilot/android_kernel_sony_msm8974" path="kernel/sony/msm8974" />
@@ -410,6 +409,7 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk" remote="aosp" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk" remote="aosp" />
   <project path="frameworks/av" name="LineageOS/android_frameworks_av" groups="pdk" />
+  <project path="frameworks/base" name="LineageOS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="aosp" />
