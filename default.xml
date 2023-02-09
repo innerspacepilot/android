@@ -12,18 +12,31 @@
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
            revision="refs/tags/android-12.1.0_r22" />
+  <remote  name="crdroid-gitlab"
+           fetch="https://gitlab.com/"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/13.0" />
 
   <default revision="refs/heads/lineage-19.1"
            remote="github"
            sync-c="true"
            sync-j="4" />
 
+
+
   <superproject name="platform/superproject" remote="aosp" revision="android-12.1.0_r22" />
   <contactinfo bugurl="go/repo-bug" />
-<project name="innerspacepilot/device_xiaomi_juice" path="device/xiaomi/juice" revision="my18.1" />
-<project name="dotOS-Devices/vendor_xiaomi_juice"   path="vendor/xiaomi/juice" revision="dot11" />
-<project name="innerspacepilot/Optimus_Drunk_Citrus" path="kernel/xiaomi/juice" revision="my18.1" />
-<project name="kdrag0n/proton-clang" path="prebuilts/clang/host/linux-x86/clang-proton" revision="master" />
+
+
+<project name="crdroidandroid/android_device_xiaomi_chime" path="device/xiaomi/chime" revision="12.1" />
+<project name="crdroidandroid/android_vendor_xiaomi_chime" path="vendor/xiaomi/chime" revision="13.0" />
+<project name="crdroidandroid/android_kernel_xiaomi_chime" path="kernel/xiaomi/chime" revision="pyro" />
+<project path="prebuilts/clang/host/linux-x86/clang-latest" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r445002" remote="crdroid-gitlab" revision="12.1"/>
+
+<!-- project name="kdrag0n/proton-clang" path="prebuilts/clang/host/linux-x86/clang-proton" revision="master" / -->
+
+
 
   <!-- AOSP Projects -->
 
