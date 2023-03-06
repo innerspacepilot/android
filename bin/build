@@ -1,0 +1,15 @@
+#!/bin/sh
+
+#export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx8192m"
+
+error() {
+  telegram-notify "$1"
+  exit 1
+}
+
+build-main || error "build failed"
+sign || error "sign failed"
+gen-full-ota || error "gen-full-ota failed "
+copy-to-mee || "copy failed"
+telegram-notify "build completed successfully" 
+

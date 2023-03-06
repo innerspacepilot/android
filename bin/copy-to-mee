@@ -1,0 +1,11 @@
+#!/bin/bash
+
+. build/envsetup.sh
+
+INPUT="/home/$USER/firmware"
+OUTPUT="/home/$USER/Mee"
+
+LINEAGE_VERSION=`get_build_var LINEAGE_VERSION`
+
+cp -vf "$INPUT/LineageOS-$LINEAGE_VERSION.zip" "$OUTPUT/LineageOS-$LINEAGE_VERSION.zip"
+
