@@ -1,0 +1,57 @@
+
+project device/xiaomi/chime/
+diff --git a/BoardConfig.mk b/BoardConfig.mk
+index 6f0385b..3b3924f 100644
+--- a/BoardConfig.mk
++++ b/BoardConfig.mk
+@@ -61,6 +61,7 @@ TARGET_KERNEL_ARCH := arm64
+ TARGET_KERNEL_SOURCE := kernel/xiaomi/chime
+ TARGET_KERNEL_CONFIG := vendor/chime_defconfig
+ TARGET_KERNEL_CLANG_COMPILE := true
++TARGET_KERNEL_CLANG_VERSION := latest
+ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
+ TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
+ 
+
+project frameworks/base/
+diff --git a/packages/SystemUI/res/layout/status_bar.xml b/packages/SystemUI/res/layout/status_bar.xml
+index da3c00ba..c6e3b39a 100644
+--- a/packages/SystemUI/res/layout/status_bar.xml
++++ b/packages/SystemUI/res/layout/status_bar.xml
+@@ -125,9 +125,9 @@
+ 
+     <com.android.keyguard.AlphaOptimizedLinearLayout
+         android:id="@+id/centered_area"
+-        android:gravity="center"
++        android:gravity="right"
+         android:orientation="horizontal"
+-        android:layout_width="match_parent"
++        android:layout_width="280dp"
+         android:layout_height="match_parent"
+         >
+         <com.android.systemui.statusbar.policy.Clock
+@@ -136,7 +136,7 @@
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:singleLine="true"
+-            android:gravity="center"
++            android:gravity="right"
+             android:visibility="gone"
+         />
+ 
+
+project packages/apps/LineageParts/
+diff --git a/src/org/lineageos/lineageparts/statusbar/StatusBarSettings.java b/src/org/lineageos/lineageparts/statusbar/StatusBarSettings.java
+index cbb63b4..153cba0 100644
+--- a/src/org/lineageos/lineageparts/statusbar/StatusBarSettings.java
++++ b/src/org/lineageos/lineageparts/statusbar/StatusBarSettings.java
+@@ -79,7 +79,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
+ 
+         mNetworkTrafficPref = findPreference(NETWORK_TRAFFIC_SETTINGS);
+ 
+-        mHasCenteredCutout = DeviceUtils.hasCenteredCutout(getActivity());
++        // mHasCenteredCutout = DeviceUtils.hasCenteredCutout(getActivity());
++        mHasCenteredCutout = false;
+         if (mHasCenteredCutout) {
+             getPreferenceScreen().removePreference(mNetworkTrafficPref);
+         }
