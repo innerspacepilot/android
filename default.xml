@@ -25,6 +25,7 @@
 <project name="crdroidandroid/android_device_xiaomi_chime" path="device/xiaomi/chime" revision="13.0" />
 <project name="crdroidandroid/android_vendor_xiaomi_chime" path="vendor/xiaomi/chime" revision="13.0" />
 <project name="crdroidandroid/android_kernel_xiaomi_chime" path="kernel/xiaomi/chime" revision="13.0" />
+<project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" revision="lineage-20" />
 <!-- project path="prebuilts/clang/host/linux-x86/clang-latest" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r445002" remote="crdroid-gitlab" revision="12.1"/ -->
 
 <!-- project name="kdrag0n/proton-clang" path="prebuilts/clang/host/linux-x86/clang-proton" revision="master" / -->
